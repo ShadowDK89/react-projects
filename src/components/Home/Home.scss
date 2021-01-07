@@ -1,0 +1,56 @@
+@import "../../css/main.scss";
+
+#movie-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  max-width: 1772px;
+
+  .movie-card {
+    background: lighten($color: $background-color, $amount: 10);
+    display: flex;
+    flex-flow: column wrap;
+    height: 300px;
+    width: 565px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    @include border-radius(10px);
+
+    img {
+      height: 300px;
+      @include border-radius(10px 0 0 10px);
+    }
+
+    .purchase.btn {
+      display: flex;
+      justify-content: center;
+    }
+    .movie-info {
+      max-width: 60%;
+      margin-left: 1rem;
+      margin-top: 0.4rem;
+
+      h3 {
+        margin: 0;
+        font-size: 1.3rem;
+      }
+      h4 {
+        margin: 0;
+        margin-top: 0.2rem;
+      }
+      p {
+        margin: 0 0 0.5rem 0;
+      }
+    }
+    .purchase-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: auto auto 0.5rem 1rem;
+
+      span {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

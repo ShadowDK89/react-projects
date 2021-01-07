@@ -1,0 +1,12 @@
+$background-color: #130f16;
+$background-color-lighter: #6f6784;
+$text-color: rgb(231, 231, 231);
+$button-color: #1b111a;
+
+@mixin border-radius($property) {
+  border-radius: $property;
+  -webkit-border-radius: $property;
+  -moz-border-radius: $property;
+  -ms-border-radius: $property;
+  -o-border-radius: $property;
+}

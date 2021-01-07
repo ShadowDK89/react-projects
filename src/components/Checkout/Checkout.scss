@@ -1,0 +1,21 @@
+#form-content {
+  justify-content: center;
+
+  form {
+    height: 350px;
+    display: flex;
+    flex-flow: column;
+    width: 250px;
+
+    .form-input {
+      width: 100% !important;
+    }
+    #pay-method {
+      display: block !important;
+      height: 50px !important;
+    }
+    #debit-cards {
+      margin-top: 25px;
+    }
+  }
+}
